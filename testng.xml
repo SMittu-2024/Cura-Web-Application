@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="BookAppointmentTest">
+    <classes>
+      <class name="automationpractice.CuraHealthWeb.tests.BookAppointmentTest"/>
+      <class name="automationpractice.CuraHealthWeb.tests.BookAppointmentValidationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="LoginTest">
+    <classes>
+      <class name="automationpractice.CuraHealthWeb.tests.LoginTest"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->
