@@ -100,12 +100,19 @@ public class BasePage {
 		int attempts = 0;
 		while (attempts < 3) {
 			try {
-				WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-				element.click();
-				System.out.println("Element clicked successfully: " + element.getText());
+				 // Re-locate fresh element each time
+	            wait.until(
+	                ExpectedConditions.refreshed(
+	                    ExpectedConditions.elementToBeClickable(locator)
+	                )
+	            ).click();
+				System.out.println("Element clicked successfully: " + locator.toString());
 				return;
 			} catch (StaleElementReferenceException e) {
-				System.out.println("Retry due to stale element...");
+				System.out.println("Stale element, retrying... " + locator.toString());
+			}
+			catch (TimeoutException e) {
+				System.out.println("Element not clickable within timeout: " + locator.toString());
 			}
 			attempts++;
 		}

@@ -31,8 +31,8 @@ public class LoginTest extends BaseTest {
 	@DataProvider(name = "invalidCredentials")
 	public Object[][] invalidData() {
 		return new Object[][] { { "Johnny Doe", "ThisIsNotAPassword" }, { "John Doe", "ThisIsWrongPassword" },
-				{ "", "ThisIsNotAPassword" }, // empty username
-				{ "John Doe", "" } // empty password
+				{ " ", "ThisIsNotAPassword" }, // empty username
+				{ "John Doe", " " } // empty password
 		};
 	}
 

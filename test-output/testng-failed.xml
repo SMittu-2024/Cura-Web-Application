@@ -5,8 +5,7 @@
     <classes>
       <class name="automationpractice.CuraHealthWeb.tests.LoginTest">
         <methods>
-          <include name="ValidUserLogInTest"/>
-          <include name="InvalidUserLogInTest" invocation-numbers="0 1 2 3"/>
+          <include name="InvalidUserLogInTest" invocation-numbers="3"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
         </methods>

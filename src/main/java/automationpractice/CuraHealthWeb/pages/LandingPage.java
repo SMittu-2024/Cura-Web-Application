@@ -27,7 +27,7 @@ public class LandingPage extends BasePage {
 
 	// By Locators
 	By alertMsgLocator = By.cssSelector(".lead.text-danger");
-	By loginLocator = By.xpath("//button[@type='submit']");
+	By loginLocator = By.xpath("//button");
 
 	public AppointmentPage loginApplication(String username, String password) {
 		// Click Make Appointment button to go to login screen
@@ -35,6 +35,7 @@ public class LandingPage extends BasePage {
 		wait.until(ExpectedConditions.urlContains("login"));
 		enterText(usernameInput, username);
 		enterText(passwordInput, password);
+		wait.until(ExpectedConditions.attributeToBeNotEmpty(passwordInput, "value"));
 		safeClick(loginLocator);
 		return (new AppointmentPage(driver));
 	}
@@ -44,9 +45,8 @@ public class LandingPage extends BasePage {
 	}
 
 	public String getAlertMessage() {
-		waitForElementToAppear(alertMsgLocator);
 		WebElement alertMsg = wait
-				.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".lead.text-danger")));
+				.until(ExpectedConditions.visibilityOfElementLocated(alertMsgLocator));
 		return alertMsg.getText();
 	}
 
