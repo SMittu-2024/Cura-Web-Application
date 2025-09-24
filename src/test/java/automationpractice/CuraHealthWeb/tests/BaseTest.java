@@ -19,7 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	WebDriver driver;
+	protected WebDriver driver;
 	protected LandingPage landingPage;
 	protected HistoryPage historyPage;
 
@@ -39,10 +39,6 @@ public class BaseTest {
 			options.addArguments("--incognito");
 			driver = new ChromeDriver(options);
 		} else if (browserName.equalsIgnoreCase("firefox")) {
-			/*
-			 * System.setProperty("webdriver.gecko.driver",
-			 * "C:/Users/Test/Downloads/geckodriver-v0.35.0-win64/geckodriver.exe");
-			 */
 			driver = new FirefoxDriver();
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();

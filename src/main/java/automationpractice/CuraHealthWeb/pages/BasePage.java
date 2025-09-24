@@ -12,15 +12,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import automationpractice.CuraHealthWeb.utils.JavaScriptUtils;
+
 public class BasePage {
 
-	WebDriver driver;
-	WebDriverWait wait;
+	protected WebDriver driver;
+	protected WebDriverWait wait;
+	protected JavaScriptUtils jsUtils;
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.jsUtils = new JavaScriptUtils(driver);
 	}
 
 	// Explicit wait for an element

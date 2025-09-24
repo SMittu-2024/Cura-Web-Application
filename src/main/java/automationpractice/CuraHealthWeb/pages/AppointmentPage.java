@@ -5,7 +5,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.LinkedHashMap;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -71,12 +70,9 @@ public class AppointmentPage extends BasePage {
 	public String getAlertMissingDate() {
 		String validationMessage = "";
 		click(bookApptLocator);
-		// Validates if user input is valid (not missing or invalid date)
-		Boolean isValid = (Boolean) ((JavascriptExecutor) driver).executeScript("return arguments[0].checkValidity();",
-				calendarInput);
+		Boolean isValid = jsUtils.checkIfValidInput(calendarInput);
 		if (!isValid) {
-			validationMessage = (String) ((JavascriptExecutor) driver)
-					.executeScript("return arguments[0].validationMessage;", calendarInput);
+			validationMessage = jsUtils.getValidationMsg(calendarInput);
 			System.out.println("Validation message: " + validationMessage);
 		}
 		return validationMessage;
