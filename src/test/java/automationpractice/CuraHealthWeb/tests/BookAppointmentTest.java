@@ -45,7 +45,7 @@ public class BookAppointmentTest extends BaseTest {
 		validation.assertTrue(userSelection.get("facility").equals(confirmationPage.getFacilityValue()));
 		validation.assertTrue(userSelection.get("date").equals(confirmationPage.getDateValue()));
 		validation.assertTrue(userSelection.get("readmission").equals(confirmationPage.getReAdmissionValue()));
-
+		
 		validation.assertAll();
 	}
 

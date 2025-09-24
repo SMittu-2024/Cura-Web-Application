@@ -27,7 +27,7 @@ public class LandingPage extends BasePage {
 
 	// By Locators
 	By alertMsgLocator = By.cssSelector(".lead.text-danger");
-	By loginLocator = By.xpath("//button");
+	By loginLocator = By.xpath("//button[text()='Login']");
 
 	public AppointmentPage loginApplication(String username, String password) {
 		// Click Make Appointment button to go to login screen

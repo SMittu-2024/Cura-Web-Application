@@ -49,6 +49,7 @@ public class BasePage {
 		int randomNumber = random.nextInt(CountOfOptions);
 		dropDown.selectByIndex(randomNumber);
 		String selectedOption = dropDown.getFirstSelectedOption().getText();
+		System.out.println("Selected facility from drop down: " + selectedOption);
 		return selectedOption;
 	}
 
@@ -62,7 +63,7 @@ public class BasePage {
 			wait.until(ExpectedConditions.elementToBeClickable(element));
 			if (element != null && element.isDisplayed() && element.isEnabled()) {
 				element.click();
-				System.out.println("Element clicked successfully: " + element.getText());
+				System.out.println("Element clicked successfully: " + element.toString());
 			}
 		} catch (TimeoutException e) {
 			System.out.println("Element not clickable within timeout: " + e.getMessage());
@@ -78,15 +79,12 @@ public class BasePage {
 	 */
 	public void click(By locator) {
 		try {
-			WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
-			if (element != null && element.isDisplayed() && element.isEnabled()) {
-				element.click();
-				System.out.println("Element clicked successfully: " + element.getText());
-			}
+			wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+			System.out.println("Element clicked successfully: " + locator.toString());
 		} catch (TimeoutException e) {
-			System.out.println("Element not clickable within timeout: " + e.getMessage());
+			System.out.println("Element not clickable within timeout: " + locator.toString());
 		} catch (Exception e) {
-			System.out.println("Failed to click element: " + e.getMessage());
+			System.out.println("Failed to click element: " + locator.toString());
 		}
 	}
 
@@ -100,7 +98,7 @@ public class BasePage {
 		int attempts = 0;
 		while (attempts < 3) {
 			try {
-				 // Re-locate fresh element each time
+				 // Re-locate fresh element each time using nested wait conditions
 	            wait.until(
 	                ExpectedConditions.refreshed(
 	                    ExpectedConditions.elementToBeClickable(locator)

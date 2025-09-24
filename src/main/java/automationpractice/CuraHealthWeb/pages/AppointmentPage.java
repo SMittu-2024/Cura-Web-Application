@@ -61,7 +61,6 @@ public class AppointmentPage extends BasePage {
 	}
 
 	public String getUrl() {
-	//	waitForElementToAppear(facilityLocator);
 		wait.until(ExpectedConditions.urlContains("#appointment"));
 		return driver.getCurrentUrl();
 	}
