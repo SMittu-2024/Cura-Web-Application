@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationpractice.CuraHealthWeb.tests.BookAppointmentTest">
+      <class name="automationpractice.CuraHealthWeb.tests.LoginTest">
         <methods>
+          <include name="InvalidUserLogInTest"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
-          <include name="bookAppointmentTest"/>
         </methods>
-      </class> <!-- automationpractice.CuraHealthWeb.tests.BookAppointmentTest -->
+      </class> <!-- automationpractice.CuraHealthWeb.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
