@@ -10,6 +10,7 @@ public class ConfigManager {
     static {
         String env = System.getProperty("env", "qa"); // default to qa if not set
         String fileName = String.format("automationpractice/CuraHealthWeb/resources/GlobalData-%s.properties", env);
+        System.out.println("Loading configuration from: " + fileName);
         try (InputStream input = ConfigManager.class.getClassLoader().getResourceAsStream(fileName)) {
             if (input != null) {
                 properties.load(input);

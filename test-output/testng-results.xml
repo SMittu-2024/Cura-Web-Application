@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-08T12:33:10 EDT" name="Suite" finished-at="2025-10-08T12:33:39 EDT" duration-ms="29565">
+  <suite started-at="2025-10-08T15:37:46 EDT" name="Default suite" finished-at="2025-10-08T15:38:00 EDT" duration-ms="13602">
     <groups>
     </groups>
-    <test started-at="2025-10-08T12:33:10 EDT" name="BookAppointmentTest" finished-at="2025-10-08T12:33:20 EDT" duration-ms="10362">
-      <class name="automationpractice.CuraHealthWeb.tests.BookAppointmentTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.BookAppointmentTest@4c60d6e9]" started-at="2025-10-08T12:33:10 EDT" name="launchApplication" finished-at="2025-10-08T12:33:13 EDT" duration-ms="3354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="bookAppointmentTest()[pri:0, instance:automationpractice.CuraHealthWeb.tests.BookAppointmentTest@4c60d6e9]" started-at="2025-10-08T12:33:13 EDT" name="bookAppointmentTest" finished-at="2025-10-08T12:33:16 EDT" duration-ms="2755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bookAppointmentTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.BookAppointmentTest@4c60d6e9]" started-at="2025-10-08T12:33:16 EDT" name="tearDown" finished-at="2025-10-08T12:33:16 EDT" duration-ms="448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- automationpractice.CuraHealthWeb.tests.BookAppointmentTest -->
-      <class name="automationpractice.CuraHealthWeb.tests.BookAppointmentValidationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.BookAppointmentValidationTest@6d60fe40]" started-at="2025-10-08T12:33:16 EDT" name="launchApplication" finished-at="2025-10-08T12:33:18 EDT" duration-ms="1626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="verifyAlertOnBookAppointment()[pri:0, instance:automationpractice.CuraHealthWeb.tests.BookAppointmentValidationTest@6d60fe40]" started-at="2025-10-08T12:33:18 EDT" name="verifyAlertOnBookAppointment" finished-at="2025-10-08T12:33:20 EDT" duration-ms="1698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAlertOnBookAppointment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.BookAppointmentValidationTest@6d60fe40]" started-at="2025-10-08T12:33:20 EDT" name="tearDown" finished-at="2025-10-08T12:33:20 EDT" duration-ms="402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- automationpractice.CuraHealthWeb.tests.BookAppointmentValidationTest -->
-    </test> <!-- BookAppointmentTest -->
-    <test started-at="2025-10-08T12:33:20 EDT" name="LoginTest" finished-at="2025-10-08T12:33:39 EDT" duration-ms="19171">
+    <test started-at="2025-10-08T15:37:46 EDT" name="Default test" finished-at="2025-10-08T15:38:00 EDT" duration-ms="13602">
       <class name="automationpractice.CuraHealthWeb.tests.LoginTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:21 EDT" name="launchApplication" finished-at="2025-10-08T12:33:23 EDT" duration-ms="1160" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:47 EDT" name="launchApplication" finished-at="2025-10-08T15:37:49 EDT" duration-ms="2145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:23 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T12:33:25 EDT" duration-ms="2024" status="PASS">
+        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:49 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T15:37:50 EDT" duration-ms="1003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUserLogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:25 EDT" name="tearDown" finished-at="2025-10-08T12:33:25 EDT" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:50 EDT" name="tearDown" finished-at="2025-10-08T15:37:51 EDT" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:25 EDT" name="launchApplication" finished-at="2025-10-08T12:33:27 EDT" duration-ms="1724" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:51 EDT" name="launchApplication" finished-at="2025-10-08T15:37:52 EDT" duration-ms="1149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:27 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T12:33:28 EDT" duration-ms="1666" status="PASS">
+        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:52 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T15:37:53 EDT" duration-ms="1008" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,15 +51,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUserLogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:28 EDT" name="tearDown" finished-at="2025-10-08T12:33:29 EDT" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:53 EDT" name="tearDown" finished-at="2025-10-08T15:37:53 EDT" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:29 EDT" name="launchApplication" finished-at="2025-10-08T12:33:30 EDT" duration-ms="1477" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:53 EDT" name="launchApplication" finished-at="2025-10-08T15:37:54 EDT" duration-ms="1240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:30 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T12:33:32 EDT" duration-ms="1557" status="PASS">
+        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:54 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T15:37:55 EDT" duration-ms="965" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUserLogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:32 EDT" name="tearDown" finished-at="2025-10-08T12:33:32 EDT" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:55 EDT" name="tearDown" finished-at="2025-10-08T15:37:55 EDT" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:32 EDT" name="launchApplication" finished-at="2025-10-08T12:33:33 EDT" duration-ms="1461" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:55 EDT" name="launchApplication" finished-at="2025-10-08T15:37:56 EDT" duration-ms="1024" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:33 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T12:33:35 EDT" duration-ms="1427" status="PASS">
+        <test-method signature="InvalidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:56 EDT" name="InvalidUserLogInTest" data-provider="invalidExcelData" finished-at="2025-10-08T15:37:57 EDT" duration-ms="925" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,15 +99,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidUserLogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:35 EDT" name="tearDown" finished-at="2025-10-08T12:33:36 EDT" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:57 EDT" name="tearDown" finished-at="2025-10-08T15:37:57 EDT" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:36 EDT" name="launchApplication" finished-at="2025-10-08T12:33:37 EDT" duration-ms="1197" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:57 EDT" name="launchApplication" finished-at="2025-10-08T15:37:59 EDT" duration-ms="1122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ValidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:37 EDT" name="ValidUserLogInTest" data-provider="validExcelData" finished-at="2025-10-08T12:33:39 EDT" duration-ms="1771" status="PASS">
+        <test-method signature="ValidUserLogInTest(java.lang.String,java.lang.String)[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:37:59 EDT" name="ValidUserLogInTest" data-provider="validExcelData" finished-at="2025-10-08T15:38:00 EDT" duration-ms="1316" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,11 +123,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidUserLogInTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@491b9b8]" started-at="2025-10-08T12:33:39 EDT" name="tearDown" finished-at="2025-10-08T12:33:39 EDT" duration-ms="601" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationpractice.CuraHealthWeb.tests.LoginTest@645aa696]" started-at="2025-10-08T15:38:00 EDT" name="tearDown" finished-at="2025-10-08T15:38:00 EDT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automationpractice.CuraHealthWeb.tests.LoginTest -->
-    </test> <!-- LoginTest -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
