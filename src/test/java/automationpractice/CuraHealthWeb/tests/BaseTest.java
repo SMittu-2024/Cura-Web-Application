@@ -1,9 +1,7 @@
 package automationpractice.CuraHealthWeb.tests;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 
 import automationpractice.CuraHealthWeb.pages.HistoryPage;
 import automationpractice.CuraHealthWeb.pages.LandingPage;
+import automationpractice.CuraHealthWeb.utils.ConfigManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -25,14 +24,7 @@ public class BaseTest {
 
 	public WebDriver initializeDriver() throws IOException {
 		// Driver SetUp
-		Properties properties = new Properties();
-		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + 
-				"\\src\\main\\java\\automationpractice\\CuraHealthWeb\\resources\\GlobalData.properties");		
-		
-		properties.load(fis);
-		String browserName = properties.getProperty("browser");
-
+		String browserName = ConfigManager.get("browser");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();

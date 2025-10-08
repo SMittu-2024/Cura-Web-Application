@@ -5,6 +5,7 @@
     <classes>
       <class name="automationpractice.CuraHealthWeb.tests.LoginTest">
         <methods>
+          <include name="ValidUserLogInTest"/>
           <include name="InvalidUserLogInTest"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
